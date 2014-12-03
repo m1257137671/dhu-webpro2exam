@@ -1,0 +1,1130 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>body
+{
+  font-size:15px;
+  line-height:1.7;
+  overflow-x:hidden;
+
+    background-color: white;
+    border-radius: 3px;
+    border: 3px solid #EEE;
+    box-shadow: inset 0 0 0 1px #CECECE;
+    font-family: Helvetica, arial, freesans, clean, sans-serif;
+    width: 912px;
+    padding: 30px;
+    margin: 2em auto;
+
+    color:#333333;
+}
+
+
+.body-classic{
+  color:#444;
+  font-family:Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', "Hiragino Sans GB", "STXihei", "微软雅黑", serif;
+  font-size:16px;
+  line-height:1.5em;
+  background:#fefefe;
+  width: 45em;
+  margin: 10px auto;
+  padding: 1em;
+  outline: 1300px solid #FAFAFA;
+}
+
+body>:first-child
+{
+  margin-top:0!important;
+}
+
+body>:last-child
+{
+  margin-bottom:0!important;
+}
+
+blockquote,dl,ol,p,pre,table,ul {
+  border: 0;
+  margin: 15px 0;
+  padding: 0;
+}
+
+body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+body a:hover {
+  text-decoration: underline;
+}
+
+body a.absent
+{
+  color:#c00;
+}
+
+body a.anchor
+{
+  display:block;
+  padding-left:30px;
+  margin-left:-30px;
+  cursor:pointer;
+  position:absolute;
+  top:0;
+  left:0;
+  bottom:0
+}
+
+/*h4,h5,h6{ font-weight: bold; }*/
+
+.octicon{
+  font:normal normal 16px sans-serif;
+  width: 1em;
+  height: 1em;
+  line-height:1;
+  display:inline-block;
+  text-decoration:none;
+  -webkit-font-smoothing:antialiased
+}
+
+.octicon-link {
+  background: url("data:image/svg+xml;utf8,<?xml version='1.0' standalone='no'?> <!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'> <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 832'> <metadata>Copyright (C) 2013 by GitHub</metadata> <!-- scale(0.01565557729941) --> <path transform='' d='M768 64h-192s-254 0-256 256c0 22 3 43 8 64h137c-11-19-18-41-18-64 0-128 128-128 128-128h192s128 0 128 128-128 128-128 128 0 64-64 128h64s256 0 256-256-256-256-256-256z m-72 192h-137c11 19 18 41 18 64 0 128-128 128-128 128h-192s-128 0-128-128 128-128 128-128-4-65 66-128h-66s-256 0-256 256 256 256 256 256h192s256 0 256-256c0-22-4-44-8-64z'/> </svg>");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.octicon-link:before{
+  content:'\a0';
+}
+
+body h1,body h2,body h3,body h4,body h5,body h6{
+  margin:1em 0 15px;
+  padding:0;
+  font-weight:bold;
+  line-height:1.7;
+  cursor:text;
+  position:relative
+}
+
+body h1 .octicon-link,body h2 .octicon-link,body h3 .octicon-link,body h4 .octicon-link,body h5 .octicon-link,body h6 .octicon-link{
+  display:none;
+  color:#000
+}
+
+body h1:hover a.anchor,body h2:hover a.anchor,body h3:hover a.anchor,body h4:hover a.anchor,body h5:hover a.anchor,body h6:hover a.anchor{
+  text-decoration:none;
+  line-height:1;
+  padding-left:0;
+  margin-left:-22px;
+  top:15%
+}
+
+body h1:hover a.anchor .octicon-link,body h2:hover a.anchor .octicon-link,body h3:hover a.anchor .octicon-link,body h4:hover a.anchor .octicon-link,body h5:hover a.anchor .octicon-link,body h6:hover a.anchor .octicon-link{
+  display:inline-block
+}
+
+body h1 tt,body h1 code,body h2 tt,body h2 code,body h3 tt,body h3 code,body h4 tt,body h4 code,body h5 tt,body h5 code,body h6 tt,body h6 code{
+  font-size:inherit
+}
+
+body h1{
+  font-size:2.5em;
+  border-bottom:1px solid #ddd
+}
+
+body h2{
+  font-size:2em;
+  border-bottom:1px solid #eee
+}
+
+body h3{
+  font-size:1.5em
+}
+
+body h4{
+  font-size:1.2em
+}
+
+body h5{
+  font-size:1em
+}
+
+body h6{
+  color:#777;
+  font-size:1em
+}
+
+body p,body blockquote,body ul,body ol,body dl,body table,body pre{
+  margin:15px 0
+}
+
+body h1 tt,body h1 code,body h2 tt,body h2 code,body h3 tt,body h3 code,body h4 tt,body h4 code,body h5 tt,body h5 code,body h6 tt,body h6 code
+{
+  font-size:inherit;
+}
+
+
+body hr
+{
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC);
+  background-repeat: repeat-x;
+  /*background:transparent url(http://overblown.net/files/markdown/dirty-shade.png) repeat-x 0 0;*/
+  background-color: transparent;
+  background-position: 0;
+  border:0 none;
+  color:#ccc;
+  height:4px;
+  margin:15px 0;
+  padding:0;
+}
+
+body li p.first
+{
+  display:inline-block;
+}
+
+body ul,body ol
+{
+  padding-left:30px;
+}
+
+body ul.no-list,body ol.no-list
+{
+  list-style-type:none;
+  padding:0;
+}
+
+body ul ul,body ul ol,body ol ol,body ol ul
+{
+  margin-bottom:0;
+  margin-top:0;
+}
+
+body dl
+{
+  padding:0;
+}
+
+body dl dt
+{
+  font-size:14px;
+  font-style:italic;
+  font-weight:700;
+  margin-top:15px;
+  padding:0;
+}
+
+body dl dd
+{
+  margin-bottom:15px;
+  padding:0 15px;
+}
+
+body blockquote
+{
+  border-left:4px solid #DDD;
+  color:#777;
+  padding:0 15px;
+}
+
+body blockquote>:first-child
+{
+  margin-top:0;
+}
+
+body blockquote>:last-child
+{
+  margin-bottom:0;
+}
+
+body table
+{
+  display:block;
+  overflow:auto;
+  width:100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  padding: 0;
+}
+
+body table th
+{
+  font-weight:700;
+}
+
+body table th,body table td
+{
+  border:1px solid #ddd;
+  padding:6px 13px;
+}
+
+body table tr
+{
+  background-color:#fff;
+  border-top:1px solid #ccc;
+}
+
+body table tr:nth-child(2n)
+{
+  background-color:#f8f8f8;
+}
+
+body img
+{
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+  max-width:100%;
+}
+
+body span.frame
+{
+  display:block;
+  overflow:hidden;
+}
+
+body span.frame>span
+{
+  border:1px solid #ddd;
+  display:block;
+  float:left;
+  margin:13px 0 0;
+  overflow:hidden;
+  padding:7px;
+  width:auto;
+}
+
+body span.frame span img
+{
+  display:block;
+  float:left;
+}
+
+body span.frame span span
+{
+  clear:both;
+  color:#333;
+  display:block;
+  padding:5px 0 0;
+}
+
+body span.align-center
+{
+  clear:both;
+  display:block;
+  overflow:hidden;
+}
+
+body span.align-center>span
+{
+  display:block;
+  margin:13px auto 0;
+  overflow:hidden;
+  text-align:center;
+}
+
+body span.align-center span img
+{
+  margin:0 auto;
+  text-align:center;
+}
+
+body span.align-right
+{
+  clear:both;
+  display:block;
+  overflow:hidden;
+}
+
+body span.align-right>span
+{
+  display:block;
+  margin:13px 0 0;
+  overflow:hidden;
+  text-align:right;
+}
+
+body span.align-right span img
+{
+  margin:0;
+  text-align:right;
+}
+
+body span.float-left
+{
+  display:block;
+  float:left;
+  margin-right:13px;
+  overflow:hidden;
+}
+
+body span.float-left span
+{
+  margin:13px 0 0;
+}
+
+body span.float-right
+{
+  display:block;
+  float:right;
+  margin-left:13px;
+  overflow:hidden;
+}
+
+body span.float-right>span
+{
+  display:block;
+  margin:13px auto 0;
+  overflow:hidden;
+  text-align:right;
+}
+
+body code,body tt
+{
+  background-color:#f8f8f8;
+  border:1px solid #ddd;
+  border-radius:3px;
+  margin:0 2px;
+  padding:0 5px;
+}
+
+body code
+{
+  white-space:nowrap;
+}
+
+
+code,pre{
+  font-family:Consolas, "Liberation Mono", Courier, monospace;
+  font-size:12px
+}
+
+body pre>code
+{
+  background:transparent;
+  border:none;
+  margin:0;
+  padding:0;
+  white-space:pre;
+}
+
+body .highlight pre,body pre
+{
+  background-color:#f8f8f8;
+  border:1px solid #ddd;
+  font-size:13px;
+  line-height:19px;
+  overflow:auto;
+  padding:6px 10px;
+  border-radius:3px
+}
+
+body pre code,body pre tt
+{
+  background-color:transparent;
+  border:none;
+  margin:0;
+  padding:0;
+}
+
+body .task-list{
+  list-style-type:none;
+  padding-left:10px
+}
+
+.task-list-item{
+  padding-left:20px
+}
+
+.task-list-item label{
+  font-weight:normal
+}
+
+.task-list-item.enabled label{
+  cursor:pointer
+}
+
+.task-list-item+.task-list-item{
+  margin-top:5px
+}
+
+.task-list-item-checkbox{
+  float:left;
+  margin-left:-20px;
+  margin-top:7px
+}
+
+
+.highlight{
+  background:#ffffff
+}
+
+.highlight .c{
+  color:#999988;
+  font-style:italic
+}
+
+.highlight .err{
+  color:#a61717;
+  background-color:#e3d2d2
+}
+
+.highlight .k{
+  font-weight:bold
+}
+
+.highlight .o{
+  font-weight:bold
+}
+
+.highlight .cm{
+  color:#999988;
+  font-style:italic
+}
+
+.highlight .cp{
+  color:#999999;
+  font-weight:bold
+}
+
+.highlight .c1{
+  color:#999988;
+  font-style:italic
+}
+
+.highlight .cs{
+  color:#999999;
+  font-weight:bold;
+  font-style:italic
+}
+
+.highlight .gd{
+  color:#000000;
+  background-color:#ffdddd
+}
+
+.highlight .gd .x{
+  color:#000000;
+  background-color:#ffaaaa
+}
+
+.highlight .ge{
+  font-style:italic
+}
+
+.highlight .gr{
+  color:#aa0000
+}
+
+.highlight .gh{
+  color:#999999
+}
+
+.highlight .gi{
+  color:#000000;
+  background-color:#ddffdd
+}
+
+.highlight .gi .x{
+  color:#000000;
+  background-color:#aaffaa
+}
+
+.highlight .go{
+  color:#888888
+}
+
+.highlight .gp{
+  color:#555555
+}
+
+.highlight .gs{
+  font-weight:bold
+}
+
+.highlight .gu{
+  color:#800080;
+  font-weight:bold
+}
+
+.highlight .gt{
+  color:#aa0000
+}
+
+.highlight .kc{
+  font-weight:bold
+}
+
+.highlight .kd{
+  font-weight:bold
+}
+
+.highlight .kn{
+  font-weight:bold
+}
+
+.highlight .kp{
+  font-weight:bold
+}
+
+.highlight .kr{
+  font-weight:bold
+}
+
+.highlight .kt{
+  color:#445588;
+  font-weight:bold
+}
+
+.highlight .m{
+  color:#009999
+}
+
+.highlight .s{
+  color:#d14
+}
+
+.highlight .n{
+  color:#333333
+}
+
+.highlight .na{
+  color:#008080
+}
+
+.highlight .nb{
+  color:#0086B3
+}
+
+.highlight .nc{
+  color:#445588;
+  font-weight:bold
+}
+
+.highlight .no{
+  color:#008080
+}
+
+.highlight .ni{
+  color:#800080
+}
+
+.highlight .ne{
+  color:#990000;
+  font-weight:bold
+}
+
+.highlight .nf{
+  color:#990000;
+  font-weight:bold
+}
+
+.highlight .nn{
+  color:#555555
+}
+
+.highlight .nt{
+  color:#000080
+}
+
+.highlight .nv{
+  color:#008080
+}
+
+.highlight .ow{
+  font-weight:bold
+}
+
+.highlight .w{
+  color:#bbbbbb
+}
+
+.highlight .mf{
+  color:#009999
+}
+
+.highlight .mh{
+  color:#009999
+}
+
+.highlight .mi{
+  color:#009999
+}
+
+.highlight .mo{
+  color:#009999
+}
+
+.highlight .sb{
+  color:#d14
+}
+
+.highlight .sc{
+  color:#d14
+}
+
+.highlight .sd{
+  color:#d14
+}
+
+.highlight .s2{
+  color:#d14
+}
+
+.highlight .se{
+  color:#d14
+}
+
+.highlight .sh{
+  color:#d14
+}
+
+.highlight .si{
+  color:#d14
+}
+
+.highlight .sx{
+  color:#d14
+}
+
+.highlight .sr{
+  color:#009926
+}
+
+.highlight .s1{
+  color:#d14
+}
+
+.highlight .ss{
+  color:#990073
+}
+
+.highlight .bp{
+  color:#999999
+}
+
+.highlight .vc{
+  color:#008080
+}
+
+.highlight .vg{
+  color:#008080
+}
+
+.highlight .vi{
+  color:#008080
+}
+
+.highlight .il{
+  color:#009999
+}
+
+.highlight .gc{
+  color:#999;
+  background-color:#EAF2F5
+}
+
+.type-csharp .highlight .k{
+  color:#0000FF
+}
+
+.type-csharp .highlight .kt{
+  color:#0000FF
+}
+
+.type-csharp .highlight .nf{
+  color:#000000;
+  font-weight:normal
+}
+
+.type-csharp .highlight .nc{
+  color:#2B91AF
+}
+
+.type-csharp .highlight .nn{
+  color:#000000
+}
+
+.type-csharp .highlight .s{
+  color:#A31515
+}
+
+.type-csharp .highlight .sc{
+  color:#A31515
+}</style><title>README</title></head><body><h1>
+<a name="%E6%9C%9F%E6%9C%AB%E8%A9%A6%E9%A8%93%E8%AA%B2%E9%A1%8C" class="anchor" href="#%E6%9C%9F%E6%9C%AB%E8%A9%A6%E9%A8%93%E8%AA%B2%E9%A1%8C"><span class="octicon octicon-link"></span></a>期末試験課題</h1>
+
+<p>下記の内容をよく読んで課題を行ってください。課題の内容に疑問がある場合には授業中に質問するか、<a href="mailto:hamada.syougo@mountposition.co.jp">hamada.syougo@mountposition.co.jp</a> 宛にメール、Facebook（<a href="https://www.facebook.com/hamada.syougo">https://www.facebook.com/hamada.syougo</a> ）にメッセージのいずれかで連絡してください。</p>
+
+<h3>
+<a name="%E8%A9%A6%E9%A8%93%E6%A6%82%E8%A6%81" class="anchor" href="#%E8%A9%A6%E9%A8%93%E6%A6%82%E8%A6%81"><span class="octicon octicon-link"></span></a>試験概要</h3>
+
+<ul>
+<li>Webプログラミング演習Ⅱの期末試験は本課題を <strong>GitHub のリポジトリに収めることで提出完了とします</strong>。</li>
+<li>期末試験では、実務で使える技術（GitHub、DataBase、オブジェクト指向、etc..）を使用します。</li>
+<li>試験課題の提出ができなかった生徒は、筆記による追試も考えています。</li>
+<li>試験課題中に作成してもらう HTML は自由にデザインして構いません。デザインは採点の対象にはしません。</li>
+<li>課題の締切りは <strong>2014/02/03 13:00（午後1時）</strong> とします。この時点でリポジトリにコミットされているもので採点を行います。<strong>忘れずに GitHub 上のリモートリポジトリにコミットを行ってください。同期処理を忘れるとGitHub 上にコミットされません。</strong>
+</li>
+<li>追試が必要な人には別途連絡を行います。追試期間は <strong>2014/02/04 〜 2014/02/08</strong> とします。</li>
+<li>仕様のところで記載されている通りの出力が行われるようにプログラミングを行ってください。</li>
+</ul><hr><h2>
+<a name="%E8%AA%B2%E9%A1%8C%E3%81%AE%E6%8F%90%E5%87%BA%E6%96%B9%E6%B3%95" class="anchor" href="#%E8%AA%B2%E9%A1%8C%E3%81%AE%E6%8F%90%E5%87%BA%E6%96%B9%E6%B3%95"><span class="octicon octicon-link"></span></a>課題の提出方法</h2>
+
+<p>試験は GitHub にリポジトリを作成し、コミットを行うことで提出完了とします。ただし、どうしても GitHub を利用できない場合には別途提出方法を提示するので相談してください。</p>
+
+<ul>
+<li><a href="https://github.com">GitHub はこちら（https://github.com）</a></li>
+</ul><h4>
+<a name="%E6%89%8B%E9%A0%861%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%82%92%E4%BD%9C%E6%88%90%E3%81%99%E3%82%8B" class="anchor" href="#%E6%89%8B%E9%A0%861%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%82%92%E4%BD%9C%E6%88%90%E3%81%99%E3%82%8B"><span class="octicon octicon-link"></span></a>手順1：アカウントを作成する</h4>
+
+<p>GitHub にアカウントを作成します。アカウントの作成方法は Lecture2 の資料を参考にしてください。 <strong>作成時のユーザ名は学籍番号にしてください。</strong></p>
+
+<h4>
+<a name="%E6%89%8B%E9%A0%862github-for-windowsgithub-for-mac-%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B" class="anchor" href="#%E6%89%8B%E9%A0%862github-for-windowsgithub-for-mac-%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B"><span class="octicon octicon-link"></span></a>手順2：GitHub for Windows、GitHub for Mac をインストールする</h4>
+
+<p>GitHub を簡単に利用するためのツールがあるのでインストールを行います。Windows 版は <a href="http://windows.github.com/">GitHub for Windows（http://windows.github.com/）</a>、Mac 版は <a href="http://mac.github.com">GitHub for Mac（http://mac.github.com）</a> になります。</p>
+
+<h4>
+<a name="%E6%89%8B%E9%A0%863%E6%8F%90%E5%87%BA%E7%94%A8%E3%81%AE%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%82%92%E4%BD%9C%E6%88%90%E3%81%99%E3%82%8B" class="anchor" href="#%E6%89%8B%E9%A0%863%E6%8F%90%E5%87%BA%E7%94%A8%E3%81%AE%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%82%92%E4%BD%9C%E6%88%90%E3%81%99%E3%82%8B"><span class="octicon octicon-link"></span></a>手順3：提出用のリポジトリを作成する</h4>
+
+<p>GitHub 上に <strong>webpro2exam</strong> という名前のリポジトリを作成します。</p>
+
+<h4>
+<a name="%E6%89%8B%E9%A0%864%E6%96%B0%E8%A6%8F%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88%E3%81%99%E3%82%8B" class="anchor" href="#%E6%89%8B%E9%A0%864%E6%96%B0%E8%A6%8F%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88%E3%81%99%E3%82%8B"><span class="octicon octicon-link"></span></a>手順4：新規ファイルをコミットする</h4>
+
+<p>リポジトリに最初のファイルをコミットします。 <strong>ファイル名に学籍番号を入力し、中身は空のファイルをコミットしてください。</strong></p>
+
+<p><a href="figure1.png" target="_blank"><img src="figure1.png" alt="Figure1" style="max-width:100%;"></a></p>
+
+<h4>
+<a name="%E6%89%8B%E9%A0%865%E8%AA%B2%E9%A1%8C%E3%81%AE%E5%86%85%E5%AE%B9%E3%82%92%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88%E3%81%99%E3%82%8B" class="anchor" href="#%E6%89%8B%E9%A0%865%E8%AA%B2%E9%A1%8C%E3%81%AE%E5%86%85%E5%AE%B9%E3%82%92%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88%E3%81%99%E3%82%8B"><span class="octicon octicon-link"></span></a>手順5：課題の内容をコミットする</h4>
+
+<p>期末課題を実施して、出来上がったところからコミットを行ってください。</p>
+
+<hr><h1>
+<a name="%E8%A9%A6%E9%A8%93%E8%AA%B2%E9%A1%8C" class="anchor" href="#%E8%A9%A6%E9%A8%93%E8%AA%B2%E9%A1%8C"><span class="octicon octicon-link"></span></a>試験課題</h1>
+
+<p>期末課題では、商品と売上を管理するシステムを作成してもらいます。データベースで商品マスターと売上を管理し、画面では、商品一覧ページ、商品購入ページ、売上一覧ページを作成してもらいます。</p>
+
+<p>次の課題を解いて、プログラムを完成させてください。</p>
+
+<ol>
+<li>データモデルを確認し、データベースにテーブルを作成すること。データベース作成、テーブル作成、初期データ投入は、初期投入用の SQL 文を利用すること。テーブル作成の SQL 文は各自考えて記述する。</li>
+<li>画面仕様を確認して、Webプログラム部分を作成する。プログラムの構造は「アーキテクチャ」の部分にしたがって作成すること。</li>
+</ol><h2>
+<a name="%E4%BB%95%E6%A7%98" class="anchor" href="#%E4%BB%95%E6%A7%98"><span class="octicon octicon-link"></span></a>仕様</h2>
+
+<h3>
+<a name="%E3%83%87%E3%83%BC%E3%82%BF%E3%83%A2%E3%83%87%E3%83%AB" class="anchor" href="#%E3%83%87%E3%83%BC%E3%82%BF%E3%83%A2%E3%83%87%E3%83%AB"><span class="octicon octicon-link"></span></a>データモデル</h3>
+
+<p><a href="figure2.png" target="_blank"><img src="figure2.png" alt="figure2" style="max-width:100%;"></a></p>
+
+<p>データベースでは上のデータを管理します。下記にテーブル定義を記載します。</p>
+
+<table>
+<thead><tr>
+<th>テーブル名</th>
+<th>論理テーブル名</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Products</td>
+<td>商品</td>
+</tr>
+<tr>
+<td>Sales</td>
+<td>売上</td>
+</tr>
+</tbody>
+</table><h5>
+<a name="%E5%95%86%E5%93%81%E3%83%86%E3%83%BC%E3%83%96%E3%83%AB" class="anchor" href="#%E5%95%86%E5%93%81%E3%83%86%E3%83%BC%E3%83%96%E3%83%AB"><span class="octicon octicon-link"></span></a>商品テーブル</h5>
+
+<table>
+<thead><tr>
+<th>カラム名</th>
+<th>論理カラム名</th>
+<th>型</th>
+<th>説明</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>商品ID</td>
+<td>INT</td>
+<td>主キー</td>
+</tr>
+<tr>
+<td>name</td>
+<td>商品名</td>
+<td>VARCHAR(255)</td>
+<td></td>
+</tr>
+<tr>
+<td>price</td>
+<td>価格</td>
+<td>INT</td>
+<td></td>
+</tr>
+</tbody>
+</table><h5>
+<a name="%E5%A3%B2%E4%B8%8A%E3%83%86%E3%83%BC%E3%83%96%E3%83%AB" class="anchor" href="#%E5%A3%B2%E4%B8%8A%E3%83%86%E3%83%BC%E3%83%96%E3%83%AB"><span class="octicon octicon-link"></span></a>売上テーブル</h5>
+
+<table>
+<thead><tr>
+<th>カラム名</th>
+<th>論理カラム名</th>
+<th>型</th>
+<th>説明</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>売上ID</td>
+<td>INT</td>
+<td>主キー</td>
+</tr>
+<tr>
+<td>product_id</td>
+<td>商品ID</td>
+<td>INT</td>
+<td>外部キー。売上商品のIDを格納する。</td>
+</tr>
+<tr>
+<td>sales_at</td>
+<td>売上日時</td>
+<td>DATETIME</td>
+<td>販売日時を格納する。購入処理時点の現在日時をプログラムから投入する。</td>
+</tr>
+<tr>
+<td>quantity</td>
+<td>販売個数</td>
+<td>INT</td>
+<td>販売個数を格納する。画面から入力される値を投入する。</td>
+</tr>
+</tbody>
+</table><h5>
+<a name="%E5%88%9D%E6%9C%9F%E3%83%87%E3%83%BC%E3%82%BF%E6%8A%95%E5%85%A5%E7%94%A8%E3%81%AE-sql-%E6%96%87" class="anchor" href="#%E5%88%9D%E6%9C%9F%E3%83%87%E3%83%BC%E3%82%BF%E6%8A%95%E5%85%A5%E7%94%A8%E3%81%AE-sql-%E6%96%87"><span class="octicon octicon-link"></span></a>初期データ投入用の SQL 文</h5>
+
+<div class="highlight highlight-sql"><pre><span class="k">CREATE</span> <span class="k">DATABASE</span> <span class="n">webpro2examdb</span> <span class="k">DEFAULT</span> <span class="nb">CHARACTER</span> <span class="k">SET</span> <span class="n">utf8</span><span class="p">;</span>
+<span class="n">use</span> <span class="n">webpro2examdb</span><span class="p">;</span>
+
+<span class="cm">/* TODO ここにテーブル作成のSQLを記述する。 */</span>
+
+<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">products</span> <span class="p">(</span><span class="n">id</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">price</span><span class="p">)</span> <span class="k">VALUES</span>
+    <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s1">'ふとんクリーナー'</span><span class="p">,</span> <span class="mi">28800</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s1">'ダイソンコードレスクリーナー'</span><span class="p">,</span> <span class="mi">47610</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="s1">'ロボット掃除機'</span><span class="p">,</span> <span class="mi">51500</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="s1">'ブラザーコンピュータミシン'</span><span class="p">,</span> <span class="mi">18900</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="s1">'毛玉取り器'</span><span class="p">,</span> <span class="mi">2480</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="s1">'ふとん専用ダニクリーナー'</span><span class="p">,</span> <span class="mi">17800</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="s1">'全自動洗濯機'</span><span class="p">,</span> <span class="mi">55000</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="s1">'コードレスアイロン'</span><span class="p">,</span> <span class="mi">5980</span><span class="p">);</span>
+</pre></div>
+
+<p>データベースへのアクセスは、Lecture3 を参考にしてください。</p>
+
+<hr><h3>
+<a name="%E7%94%BB%E9%9D%A2" class="anchor" href="#%E7%94%BB%E9%9D%A2"><span class="octicon octicon-link"></span></a>画面</h3>
+
+<p>画面遷移は次のようになります。</p>
+
+<p><a href="figure6.png" target="_blank"><img src="figure6.png" alt="画面遷移" style="max-width:100%;"></a></p>
+
+<h5>
+<a name="%E5%95%86%E5%93%81%E4%B8%80%E8%A6%A7%E7%94%BB%E9%9D%A2" class="anchor" href="#%E5%95%86%E5%93%81%E4%B8%80%E8%A6%A7%E7%94%BB%E9%9D%A2"><span class="octicon octicon-link"></span></a>商品一覧画面</h5>
+
+<p><a href="figure3.png" target="_blank"><img src="figure3.png" alt="画面1" style="max-width:100%;"></a></p>
+
+<h5>
+<a name="%E5%95%86%E5%93%81%E8%B3%BC%E5%85%A5%E7%94%BB%E9%9D%A2" class="anchor" href="#%E5%95%86%E5%93%81%E8%B3%BC%E5%85%A5%E7%94%BB%E9%9D%A2"><span class="octicon octicon-link"></span></a>商品購入画面</h5>
+
+<p><a href="figure4.png" target="_blank"><img src="figure4.png" alt="画面2" style="max-width:100%;"></a></p>
+
+<h5>
+<a name="%E5%A3%B2%E4%B8%8A%E4%B8%80%E8%A6%A7%E7%94%BB%E9%9D%A2" class="anchor" href="#%E5%A3%B2%E4%B8%8A%E4%B8%80%E8%A6%A7%E7%94%BB%E9%9D%A2"><span class="octicon octicon-link"></span></a>売上一覧画面</h5>
+
+<p><a href="figure5.png" target="_blank"><img src="figure5.png" alt="画面3" style="max-width:100%;"></a></p>
+
+<hr><h3>
+<a name="%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%81%E3%83%A3" class="anchor" href="#%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%81%E3%83%A3"><span class="octicon octicon-link"></span></a>アーキテクチャ</h3>
+
+<p>アーキテクチャは MVC とします。ここに現れていないクラスやメソッドを追加することは問題ありません。このアーキテクチャ図は参考程度のものです。</p>
+
+<p>MVCフレームワークは次のサイトを参考にしてください。</p>
+
+<ul>
+<li><a href="http://jehupc.exblog.jp/19260662/">http://jehupc.exblog.jp/19260662/</a></li>
+<li><a href="http://jehupc.exblog.jp/19260670/">http://jehupc.exblog.jp/19260670/</a></li>
+</ul><p><a href="figure7.png" target="_blank"><img src="figure7.png" alt="アーキテクチャ" style="max-width:100%;"></a></p>
+
+<h5>
+<a name="%E3%82%AF%E3%83%A9%E3%82%B9%E3%81%AE%E5%BD%B9%E5%89%B2" class="anchor" href="#%E3%82%AF%E3%83%A9%E3%82%B9%E3%81%AE%E5%BD%B9%E5%89%B2"><span class="octicon octicon-link"></span></a>クラスの役割</h5>
+
+<table>
+<thead><tr>
+<th>クラス名</th>
+<th>説明</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>ProductsController</td>
+<td>商品一覧画面の処理を受け持つクラス。<code>indexAction</code> メソッドで <code>Product#all</code> を呼び出し商品一覧を取得したら、<code>products/index.php</code> で一覧画面を表示する。</td>
+</tr>
+<tr>
+<td>SalesController</td>
+<td>売上一覧画面と購入画面の処理を受け持つクラス。<code>indexAction</code> メソッドでは売上一覧画面を、<code>newAction</code> メソッドでは購入画面を表示する。<code>createAction</code> メソッドでは購入処理として <code>Sale#save</code> を呼び出して購入データをデータベースに保存する。</td>
+</tr>
+<tr>
+<td>Product</td>
+<td>商品モデル。<code>all</code> メソッドはデータベースから商品データを全て取得して返す。<code>load</code> メソッドは指定された ID の商品データのみをロードする。</td>
+</tr>
+<tr>
+<td>Sale</td>
+<td>売上モデル。<code>all</code> メソッドはデータベースから全ての売上データを取得して返す。<code>save</code> メソッドは自分自身のデータをデータベースに保存する。</td>
+</tr>
+<tr>
+<td>products/index.php</td>
+<td>商品一覧画面のテンプレート</td>
+</tr>
+<tr>
+<td>sales/new.php</td>
+<td>購入画面のテンプレート</td>
+</tr>
+<tr>
+<td>sales/index.php</td>
+<td>売上一覧画面のテンプレート</td>
+</tr>
+</tbody>
+</table><hr><h2>
+<a name="%E9%96%8B%E7%99%BA%E3%81%AE%E3%83%92%E3%83%B3%E3%83%88" class="anchor" href="#%E9%96%8B%E7%99%BA%E3%81%AE%E3%83%92%E3%83%B3%E3%83%88"><span class="octicon octicon-link"></span></a>開発のヒント</h2>
+
+<h3>
+<a name="mvc-%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%81%E3%83%A3%E3%81%A7-view-%E9%83%A8%E5%88%86%E3%82%92%E8%A1%A8%E7%A4%BA%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95%E3%81%AFphp-%E3%81%AE-include-%E6%A7%8B%E6%96%87%E3%81%8C%E4%BD%BF%E3%81%88%E3%81%BE%E3%81%99" class="anchor" href="#mvc-%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%81%E3%83%A3%E3%81%A7-view-%E9%83%A8%E5%88%86%E3%82%92%E8%A1%A8%E7%A4%BA%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95%E3%81%AFphp-%E3%81%AE-include-%E6%A7%8B%E6%96%87%E3%81%8C%E4%BD%BF%E3%81%88%E3%81%BE%E3%81%99"><span class="octicon octicon-link"></span></a>MVC アーキテクチャで View 部分を表示する方法は、PHP の <code>include</code> 構文が使えます</h3>
+
+<h5>
+<a name="products_controllerphp" class="anchor" href="#products_controllerphp"><span class="octicon octicon-link"></span></a>products_controller.php</h5>
+
+<div class="highlight highlight-php"><pre><span class="o">&lt;?</span><span class="nx">php</span>
+<span class="k">class</span> <span class="nc">ProductsController</span> <span class="p">{</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">index</span><span class="p">()</span> <span class="p">{</span>
+        <span class="c1">// 何かの処理...</span>
+
+        <span class="nv">$model_data</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">'テレビ'</span><span class="p">,</span> <span class="s1">'掃除機'</span><span class="p">,</span> <span class="s1">'洗濯機'</span><span class="p">);</span>
+        <span class="k">include</span><span class="p">(</span><span class="s1">'views/products/index.php'</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nv">$controller</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ProductsController</span><span class="p">();</span>
+<span class="nv">$controller</span><span class="o">-&gt;</span><span class="na">index</span><span class="p">();</span>
+</pre></div>
+
+<h5>
+<a name="productsindexphp" class="anchor" href="#productsindexphp"><span class="octicon octicon-link"></span></a>products/index.php</h5>
+
+<div class="highlight highlight-html"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"ja"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;ul&gt;</span>
+    <span class="cp">&lt;?php</span>
+<span class="cp">        foreach ($model_data as $name) {</span>
+<span class="cp">            echo "&lt;li&gt;${name}&lt;/li&gt;";</span>
+<span class="cp">        }</span>
+<span class="cp">    ?&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</pre></div>
+
+<p><a href="figure8.png" target="_blank"><img src="figure8.png" alt="結果" style="max-width:100%;"></a></p>
+
+<h3>
+<a name="%E3%83%A2%E3%83%87%E3%83%AB%E3%82%AF%E3%83%A9%E3%82%B9%E3%81%AE%E5%B1%9E%E6%80%A7%E3%82%92%E3%82%B3%E3%83%B3%E3%83%88%E3%83%AD%E3%83%BC%E3%83%A9%E3%82%84%E3%83%93%E3%83%A5%E3%83%BC%E3%81%AE%E4%B8%AD%E3%81%A7%E5%8F%82%E7%85%A7%E3%82%84%E8%A8%AD%E5%AE%9A%E3%82%92%E3%81%97%E3%81%9F%E3%81%84%E5%A0%B4%E5%90%88%E3%81%AF%E3%83%A2%E3%83%87%E3%83%AB%E3%82%AF%E3%83%A9%E3%82%B9%E3%81%AB-gettersetter-%E3%82%92%E7%94%A8%E6%84%8F%E3%81%97%E3%81%BE%E3%81%99" class="anchor" href="#%E3%83%A2%E3%83%87%E3%83%AB%E3%82%AF%E3%83%A9%E3%82%B9%E3%81%AE%E5%B1%9E%E6%80%A7%E3%82%92%E3%82%B3%E3%83%B3%E3%83%88%E3%83%AD%E3%83%BC%E3%83%A9%E3%82%84%E3%83%93%E3%83%A5%E3%83%BC%E3%81%AE%E4%B8%AD%E3%81%A7%E5%8F%82%E7%85%A7%E3%82%84%E8%A8%AD%E5%AE%9A%E3%82%92%E3%81%97%E3%81%9F%E3%81%84%E5%A0%B4%E5%90%88%E3%81%AF%E3%83%A2%E3%83%87%E3%83%AB%E3%82%AF%E3%83%A9%E3%82%B9%E3%81%AB-gettersetter-%E3%82%92%E7%94%A8%E6%84%8F%E3%81%97%E3%81%BE%E3%81%99"><span class="octicon octicon-link"></span></a>モデルクラスの属性をコントローラやビューの中で参照や設定をしたい場合は、モデルクラスに getter/setter を用意します</h3>
+
+<p>アーキテクチャのクラス図を見るとわかるように、<code>Product</code> や <code>Sale</code> のクラスには <code>private</code> な属性(id, name など)があります。private な属性は自分自身のクラスの中からしか参照することができません。別のクラスからも参照したい場合には、<code>getId</code> や <code>setName</code> などのメソッドを用意します。</p>
+
+<div class="highlight highlight-php"><pre><span class="o">&lt;?</span><span class="nx">php</span>
+
+<span class="k">class</span> <span class="nc">Sale</span> <span class="p">{</span>
+
+    <span class="k">private</span> <span class="nv">$id</span><span class="p">;</span>
+    <span class="k">private</span> <span class="nv">$product_id</span><span class="p">;</span>
+    <span class="k">private</span> <span class="nv">$sales_at</span><span class="p">;</span>
+    <span class="k">private</span> <span class="nv">$quantity</span><span class="p">;</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">__construct</span><span class="p">(</span><span class="nv">$params</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">id</span>         <span class="o">=</span> <span class="nb">isset</span><span class="p">(</span><span class="nv">$params</span><span class="p">[</span><span class="s1">'id'</span><span class="p">])</span> <span class="o">?</span> <span class="nv">$params</span><span class="p">[</span><span class="s1">'id'</span><span class="p">]</span> <span class="o">:</span> <span class="k">null</span><span class="p">;</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">product_id</span> <span class="o">=</span> <span class="nb">isset</span><span class="p">(</span><span class="nv">$params</span><span class="p">[</span><span class="s1">'product_id'</span><span class="p">])</span> <span class="o">?</span> <span class="nv">$params</span><span class="p">[</span><span class="s1">'product_id'</span><span class="p">]</span> <span class="o">:</span> <span class="k">null</span><span class="p">;</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">sales_at</span>   <span class="o">=</span> <span class="nb">isset</span><span class="p">(</span><span class="nv">$params</span><span class="p">[</span><span class="s1">'sales_at'</span><span class="p">])</span> <span class="o">?</span> <span class="nv">$params</span><span class="p">[</span><span class="s1">'sales_at'</span><span class="p">]</span> <span class="o">:</span> <span class="k">null</span><span class="p">;</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">quantity</span>   <span class="o">=</span> <span class="nb">isset</span><span class="p">(</span><span class="nv">$params</span><span class="p">[</span><span class="s1">'quantity'</span><span class="p">])</span> <span class="o">?</span> <span class="nv">$params</span><span class="p">[</span><span class="s1">'quantity'</span><span class="p">]</span> <span class="o">:</span> <span class="k">null</span><span class="p">;</span>
+    <span class="p">}</span>
+
+
+    <span class="k">public</span> <span class="k">static</span> <span class="k">function</span> <span class="nf">all</span><span class="p">()</span> <span class="p">{</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">save</span><span class="p">()</span> <span class="p">{</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">getId</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">id</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">setId</span><span class="p">(</span><span class="nv">$id</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">id</span> <span class="o">=</span> <span class="nv">$id</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">getProductId</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">product_id</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">setProductId</span><span class="p">(</span><span class="nv">$product_id</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">product_id</span> <span class="o">=</span> <span class="nv">$product_id</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">getSalesAt</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">sales_at</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">setSalesAt</span><span class="p">(</span><span class="nv">$sales_at</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">sales_at</span> <span class="o">=</span> <span class="nv">$sales_at</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">getQuantity</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">quantity</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">setQuantity</span><span class="p">(</span><span class="nv">$quantity</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">quantity</span> <span class="o">=</span> <span class="nv">$quantity</span><span class="p">;</span>
+    <span class="p">}</span>
+
+<span class="p">}</span>
+</pre></div>
+
+<h3>
+<a name="%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9%E3%81%AE-id-%E3%82%AB%E3%83%A9%E3%83%A0%E3%81%AB%E8%87%AA%E5%8B%95%E3%81%A7%E9%80%A3%E7%95%AA%E3%82%92%E6%8C%AF%E3%82%8B%E6%96%B9%E6%B3%95" class="anchor" href="#%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9%E3%81%AE-id-%E3%82%AB%E3%83%A9%E3%83%A0%E3%81%AB%E8%87%AA%E5%8B%95%E3%81%A7%E9%80%A3%E7%95%AA%E3%82%92%E6%8C%AF%E3%82%8B%E6%96%B9%E6%B3%95"><span class="octicon octicon-link"></span></a>データベースの ID カラムに自動で連番を振る方法</h3>
+
+<p>売上データを登録する際に、ID カラムに自動で連番を振りたいと思います。そんなときはテーブル作成時に ID カラムに AUTO_INCREMENT を指定しましょう。</p>
+
+<div class="highlight highlight-sql"><pre><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">sales</span><span class="p">(</span>
+    <span class="n">id</span> <span class="nb">integer</span> <span class="k">primary</span> <span class="k">key</span> <span class="n">AUTO_INCREMENT</span><span class="p">,</span>
+    <span class="cm">/* 略 */</span>
+<span class="p">);</span>
+</pre></div>
+
+<h3>
+<a name="pdo-%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%9F%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9%E5%87%A6%E7%90%86%E3%81%A7%E3%82%88%E3%81%8F%E3%82%8F%E3%81%8B%E3%82%89%E3%81%AA%E3%81%84%E3%82%A8%E3%83%A9%E3%83%BC%E3%81%8C%E8%B5%B7%E3%81%93%E3%81%A3%E3%81%9F%E3%82%89" class="anchor" href="#pdo-%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%9F%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9%E5%87%A6%E7%90%86%E3%81%A7%E3%82%88%E3%81%8F%E3%82%8F%E3%81%8B%E3%82%89%E3%81%AA%E3%81%84%E3%82%A8%E3%83%A9%E3%83%BC%E3%81%8C%E8%B5%B7%E3%81%93%E3%81%A3%E3%81%9F%E3%82%89"><span class="octicon octicon-link"></span></a>PDO を使ったデータベース処理でよくわからないエラーが起こったら</h3>
+
+<p>PDO には直前に発生したエラーを取得するための <code>errorInfo</code> というメソッドが用意されています。エラーが起こっているかどうか確認したい場合にはこのメソッドを使いましょう。</p>
+
+<div class="highlight highlight-php"><pre><span class="o">&lt;?</span><span class="nx">php</span>
+<span class="nv">$pdo</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">PDO</span><span class="p">(</span><span class="s1">'略'</span><span class="p">,</span> <span class="s1">'略'</span><span class="p">,</span> <span class="s1">'略'</span><span class="p">);</span>
+<span class="nv">$stmt</span> <span class="o">=</span> <span class="nv">$pdo</span><span class="o">-&gt;</span><span class="na">prepare</span><span class="p">(</span><span class="s1">'略'</span><span class="p">);</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nv">$stmt</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nv">$stmt</span><span class="o">-&gt;</span><span class="na">bindParam</span><span class="p">(</span><span class="cm">/* 略 */</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nv">$stmt</span><span class="o">-&gt;</span><span class="na">execute</span><span class="p">())</span> <span class="p">{</span>
+        <span class="cm">/* 略 */</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="nb">var_dump</span><span class="p">(</span><span class="nv">$stmt</span><span class="o">-&gt;</span><span class="na">errorInfo</span><span class="p">());</span>
+    <span class="p">}</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="nb">var_dump</span><span class="p">(</span><span class="nv">$pdo</span><span class="o">-&gt;</span><span class="na">errorInfo</span><span class="p">());</span>
+<span class="p">}</span>
+</pre></div></body></html>
